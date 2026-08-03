@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respondr - Account Recovery</title>
+    <meta name="description" content="Step-by-step account recovery for compromised accounts. Official verified links and prevention tips." />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Fonts: Manrope (used in Tailwind setup) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS output (or your bundled CSS) -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css" />
+  </head>
+  <body class="bg-white font-manrope">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <!-- React root -->
+    <div id="root"></div>
+
+    <!-- Environment variable fallback -->
+    <script>
+      window.REACT_APP_BACKEND_URL = "%REACT_APP_BACKEND_URL%";
+    </script>
+
+    <!-- React script bundle -->
+    <script type="module" src="%PUBLIC_URL%/src/main.jsx"></script>
+  </body>
+</html>

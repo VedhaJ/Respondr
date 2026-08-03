@@ -1,0 +1,167 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Respondr",
+      "archetype": "The Soft Utility",
+      "vibe": "Clinical, Reassuring, Authoritative, Calm",
+      "principles": [
+        "Clarity over Style: In a crisis, clarity is the only aesthetic that matters.",
+        "Calm Authority: Use blue/slate tones to lower heart rate. No panic reds.",
+        "Step-by-Step: Never overwhelm. Reveal information progressively.",
+        "Human Touch: The AI should feel like a calm expert, not a robot."
+      ]
+    },
+    "typography": {
+      "fonts": {
+        "heading": "Manrope",
+        "body": "Inter"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-6xl font-bold tracking-tight leading-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold tracking-normal",
+        "body_lg": "text-lg leading-relaxed text-slate-600",
+        "body_base": "text-base leading-relaxed text-slate-600",
+        "caption": "text-sm font-medium tracking-wide text-slate-500 uppercase"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#2563EB",
+          "foreground": "#FFFFFF",
+          "hover": "#1D4ED8",
+          "description": "Royal Blue - Used for primary actions and brand identity. Trustworthy."
+        },
+        "secondary": {
+          "DEFAULT": "#EFF6FF",
+          "foreground": "#1E40AF",
+          "description": "Soft Blue - Used for backgrounds of secondary elements."
+        },
+        "accent": {
+          "DEFAULT": "#10B981",
+          "foreground": "#FFFFFF",
+          "description": "Emerald - Used for 'Verified', 'Safe', and 'Success' states."
+        },
+        "destructive": {
+          "DEFAULT": "#EF4444",
+          "foreground": "#FFFFFF",
+          "description": "Red - Use SPARINGLY. Only for 'Account Compromised' confirmation or critical warnings."
+        },
+        "background": "#F8FAFC",
+        "surface": "#FFFFFF",
+        "text": {
+          "primary": "#0F172A",
+          "secondary": "#64748B",
+          "muted": "#94A3B8"
+        }
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-b from-blue-50 to-white",
+        "card_hover": "hover:bg-blue-50/50",
+        "glass": "bg-white/80 backdrop-blur-xl border border-white/20"
+      }
+    },
+    "spacing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section_padding": "py-16 md:py-24",
+      "element_gap": "gap-6 md:gap-8"
+    },
+    "visual_enhancers": {
+      "radius": "rounded-xl",
+      "shadows": {
+        "card": "shadow-[0_2px_8px_rgba(15,23,42,0.08)]",
+        "floating": "shadow-[0_20px_40px_rgba(37,99,235,0.1)]",
+        "inner": "shadow-[inset_0_1px_2px_rgba(0,0,0,0.05)]"
+      },
+      "borders": "border border-slate-200",
+      "glassmorphism": "bg-white/70 backdrop-blur-lg border border-white/40 shadow-sm"
+    },
+    "animation": {
+      "transition": "transition-all duration-300 ease-out",
+      "hover_lift": "hover:-translate-y-1 hover:shadow-lg",
+      "fade_in": "animate-in fade-in duration-500 slide-in-from-bottom-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 rounded-full font-semibold shadow-lg shadow-blue-500/20 transition-transform active:scale-95",
+      "secondary": "bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 h-12 px-6 rounded-full font-medium transition-colors",
+      "ghost": "text-slate-600 hover:text-primary hover:bg-blue-50 h-10 px-4 rounded-lg"
+    },
+    "cards": {
+      "incident": "bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all cursor-pointer group relative overflow-hidden",
+      "feature": "bg-slate-50 p-8 rounded-2xl border border-transparent hover:bg-white hover:shadow-lg transition-all"
+    },
+    "inputs": {
+      "chat": "bg-white border-slate-200 focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 rounded-2xl py-4 px-6 shadow-sm text-base"
+    },
+    "badges": {
+      "verified": "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800 border border-emerald-200",
+      "warning": "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800 border border-amber-200"
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "grid": "grid grid-cols-1 md:grid-cols-12 gap-8",
+      "hero_section": "col-span-full md:col-span-12 flex flex-col items-center text-center py-20",
+      "incident_grid": "col-span-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    },
+    "incident_response": {
+      "layout": "flex flex-col lg:flex-row h-[calc(100vh-4rem)] overflow-hidden",
+      "chat_panel": "w-full lg:w-1/2 xl:w-2/5 flex flex-col border-r border-slate-200 bg-white",
+      "action_panel": "w-full lg:w-1/2 xl:w-3/5 bg-slate-50 p-8 overflow-y-auto"
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_abstract",
+        "url": "https://images.unsplash.com/photo-1636108935910-0188b979550d?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Abstract floating blue glass shield element for hero section background or visual anchor."
+      },
+      {
+        "category": "security_concept",
+        "url": "https://images.unsplash.com/photo-1614064745490-83abb17303e1?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Green and silver padlock for 'Prevention' or 'Security Tips' section."
+      },
+      {
+        "category": "trust_concept",
+        "url": "https://images.unsplash.com/photo-1639503547276-90230c4a4198?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Red and Blue security signs for 'Incident Types' or 'Warning' visuals."
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "mappings": {
+        "instagram": "Instagram",
+        "gmail": "Mail",
+        "facebook": "Facebook",
+        "whatsapp": "MessageCircle",
+        "twitter": "Twitter",
+        "shield": "ShieldCheck",
+        "lock": "Lock",
+        "alert": "AlertTriangle",
+        "check": "CheckCircle2",
+        "chat": "MessageSquare"
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. THEME SETUP: Update tailwind.config.js with the 'Soft Utility' color palette defined above. Use Slate-50 for background, not pure white.",
+    "2. FONT SETUP: Import 'Manrope' and 'Inter' from Google Fonts in index.css.",
+    "3. LANDING PAGE: Build a 'Calm Command Center'. Big, reassuring headline. Below it, a grid of 'Incident Cards' (Instagram, Gmail, etc.). Do not use a generic SaaS hero.",
+    "4. CHATBOT: The chat interface is the core. It must look like a modern messaging app (iMessage/WhatsApp style) but cleaner. Use 'ChatBubble' components with distinct styles for User (Blue) and AI (Gray).",
+    "5. RECOVERY LINKS: When the AI suggests a link, render it as a 'Verified Action Card' - a distinct UI element with a green checkmark, the official logo, and a 'Go to Official Support' button.",
+    "6. TRUST SIGNALS: Everywhere a link is shown, add a 'Verified by Respondr' tooltip or badge.",
+    "7. ACCESSIBILITY: Ensure all text has high contrast (Slate-600+ on Slate-50). No faint gray text.",
+    "8. DATA-TESTID: Add data-testid to every button, input, and card. E.g., 'incident-card-instagram', 'chat-input-field'."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic centered layouts. Use asymmetry in the landing page grid.",
+    "Micro-interactions: Buttons should scale down slightly on click. Cards should lift on hover.",
+    "Glassmorphism: Use the 'glass' utility defined in colors for sticky headers and overlays.",
+    "No Emojis: Use Lucide icons instead of emojis for a professional look.",
+    "Toast Notifications: Use 'sonner' for all system feedback."
+  ]
+}
